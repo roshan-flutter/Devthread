@@ -167,7 +167,8 @@ class MyContainer1 extends StatelessWidget {
         ),
        // borderRadius: BorderRadius.only(bottomRight: Radius.circular(2)),
         gradient: LinearGradient(
-          colors: [Color(0xFF3aa0d8),Color(0xFFc33bff)],
+          colors: [Color(0xFF3aa0d8),
+            Color(0xFFc33bff)],
         ),
       ),
     );
