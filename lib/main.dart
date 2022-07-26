@@ -1,5 +1,6 @@
 import 'package:devthread/Test/buttontest.dart';
 import 'package:devthread/pages/page1.dart';
+import 'package:devthread/pages/userProfilePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,6 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return FirstPage();
+    return UserProfile();
+    // return FirstPage();
   }
 }
