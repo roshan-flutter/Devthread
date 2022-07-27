@@ -317,5 +317,5 @@ class _UserProfileState extends State<UserProfile> {
           //new Text(litems[index] + ":" +litems[index] );
       },
   );
-}
+  }
 }
