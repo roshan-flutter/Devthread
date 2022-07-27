@@ -5,11 +5,9 @@ import 'package:devthread/button/button.dart';
 import 'package:flutter/material.dart';
 class FirstPage extends StatefulWidget {
   const FirstPage({Key? key}) : super(key: key);
-
   @override
   State<FirstPage> createState() => _FirstPageState();
 }
-
 class _FirstPageState extends State<FirstPage> {
   var Title="Mandha";
   final _imagePaths=[
@@ -23,9 +21,8 @@ class _FirstPageState extends State<FirstPage> {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          extendBodyBehindAppBar: true,
+         extendBodyBehindAppBar: true,
             appBar: AppBar(
-
               title: Text(Title,
               ),
               elevation: 0,
@@ -107,33 +104,44 @@ class _FirstPageState extends State<FirstPage> {
                 ),
               ],
             ),
-          body:
-
-                      Stack(
+          bottomNavigationBar: BottomBar(),
+          body: Stack(
                         children:<Widget> [
-
                           Row(
                             children: [
                               Column(
-                                children: [
-                                    MyContainer1(),
-
-                                ],
-                              ),
+                                  children: [
+                                      MyContainer1(),
+                                  ],
+                                ),
                             ],
                           ),
                               Positioned(
-                                top: 80,
+                                top: 60,
                                 child:Column(
                                   children: [
                                     MyContainer2(),
-                                    Scrollbar(child: MyContainer3()),
+                                    MyContainer3(),
                                     MyContainer4(),
+                                    SizedBox(height: 10,),
                                     MyContainer5(),
-                                    BottomBar(),
+                                    SizedBox(height: 20,),
                                   ],
                                 ),
                               ),
+                          Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("Exciting Coupans Avilable",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ),
+                          )
                         ],
                       ),
         ),
@@ -150,13 +158,13 @@ class MyContainer1 extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height*0.25,
+      height: MediaQuery.of(context).size.height*0.18,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft:Radius.circular(0),
           topRight: Radius.circular(0),
-          bottomRight: Radius.circular(36),
-          bottomLeft: Radius.circular(36),
+          bottomRight: Radius.circular(50),
+          bottomLeft: Radius.circular(50),
         ),
         gradient: LinearGradient(
           colors: [Color(0xFF3aa0d8),
@@ -204,7 +212,14 @@ class _MyContainer2State extends State<MyContainer2> {
          ),
        );
      }).toList(),
-     options: CarouselOptions(autoPlay: true),
+     options: CarouselOptions(autoPlay: true,
+     aspectRatio: 16/9,
+       enlargeCenterPage: true,
+       enableInfiniteScroll: true,
+       height: 250,
+       autoPlayCurve: Curves.fastOutSlowIn,
+       autoPlayAnimationDuration:const Duration(milliseconds: 1000),
+     ),
    ),
         );
   }
@@ -375,7 +390,7 @@ class _MyContainer5State extends State<MyContainer5> {
   Widget build(BuildContext context) {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.only(left: 16,right: 16,top: 8,bottom: 8),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -423,8 +438,8 @@ class _MyContainer5State extends State<MyContainer5> {
           ],
         ),
       ),
-      width: MediaQuery.of(context).size.width,
-      height: 50,
+      width: MediaQuery.of(context).size.width*0.9,
+      height: 60,
       decoration: BoxDecoration(
          color: Colors.white10,
           border: Border.all(width: 2,
@@ -446,33 +461,26 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(5.0),
       child: Container(
-        width: MediaQuery.of(context).size.width*0.9,
-        height: MediaQuery.of(context).size.height*0.12,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height*0.09,
         decoration: BoxDecoration(
           color: Colors.white,
-          border: Border.all(width: 2,
-          color: Colors.black12),
-          borderRadius: BorderRadius.circular(5)
+          border: Border(
+            top: BorderSide(
+              width: 1,
+              color: Colors.black26
+            ),
+          ),
+          //borderRadius: BorderRadius.circular(5)
         ),
         child: Padding(
-          padding: const EdgeInsets.only(left: 16,right: 16),
+          padding: const EdgeInsets.only(left: 8,right: 8),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //   crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Row(
-                children: [
-                  Text("Exciting Coupans Avilable",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
-              ),
               Column(
                 children: [
                 Row(
@@ -494,14 +502,14 @@ class _BottomBarState extends State<BottomBar> {
                               print("Button was tapped");
                             },
                             child: Image.asset("icons/home.png",
-                              width: 30,
-                              height: 30,
+                              width: 40,
+                              height: 35,
                             ),
                           ),
                         ),
                         Text("Home",
-                          style: TextStyle(fontSize: 10,
-                              fontWeight: FontWeight.w500,),),
+                          style: TextStyle(fontSize: 12,
+                              fontWeight: FontWeight.w700,),),
                       ],
                     ),
 
@@ -522,14 +530,14 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/dashboard.png",
-                                width: 30,
-                                height: 30,
+                                width: 40,
+                                height: 35,
                               ),
                             ),
                           ),
                           Text("Dashboard",
-                            style: TextStyle(fontSize: 10,
-                                fontWeight: FontWeight.w500,),),
+                            style: TextStyle(fontSize: 12,
+                                fontWeight: FontWeight.w700,),),
                         ],
                       ),
 
@@ -550,14 +558,14 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/chat.png",
-                                width: 30,
-                                height: 30,
+                                width: 40,
+                                height: 35,
                               ),
                             ),
                           ),
                           Text("Chat",
-                            style: TextStyle(fontSize: 10,
-                            fontWeight: FontWeight.w500),),
+                            style: TextStyle(fontSize: 12,
+                            fontWeight: FontWeight.w700),),
                         ],
                       ),
 
@@ -578,14 +586,14 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/favourite.png",
-                                width: 30,
-                                height: 30,
+                                width: 40,
+                                height: 35,
                               ),
                             ),
                           ),
                           Text("Favourite",
-                            style: TextStyle(fontSize: 10,
-                            fontWeight: FontWeight.w500),),
+                            style: TextStyle(fontSize: 12,
+                            fontWeight: FontWeight.w700),),
                         ],
                       ),
 
@@ -606,14 +614,14 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/setting.png",
-                                width: 30,
-                                height: 30,
+                                width: 40,
+                                height: 35,
                               ),
                             ),
                           ),
                           Text("Settings",
-                            style: TextStyle(fontSize: 10,
-                            fontWeight: FontWeight.w500),),
+                            style: TextStyle(fontSize: 12,
+                            fontWeight: FontWeight.w700),),
                         ],
                       ),
 

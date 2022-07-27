@@ -18,11 +18,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return CancillationPolicy();
-=======
-    return UserProfile();
-    // return FirstPage();
->>>>>>> 414c065859f02bfae86b579a08490676a81ee96e
+    return //UserProfile();
+    // return UserProfile();
+     FirstPage();
   }
 }
