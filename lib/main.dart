@@ -1,4 +1,5 @@
 import 'package:devthread/Test/buttontest.dart';
+import 'package:devthread/pages/cancellation_policy.dart';
 import 'package:devthread/pages/page1.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return FirstPage();
+    return CancillationPolicy();
   }
 }
