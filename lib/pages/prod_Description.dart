@@ -166,10 +166,8 @@ class _prodDescriptionState extends State<prodDescription> {
                         // Text("₹"+totAmount.toString(), style: TextStyle(fontSize: 20),)
                         Text("₹20,700.00", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
                       ],
-
                     ),
                   ],
-
                 ),
               ),
               Column(
@@ -213,7 +211,6 @@ class _prodDescriptionState extends State<prodDescription> {
                       )
                   )
                 ],
-
               ),
             ],
           ),

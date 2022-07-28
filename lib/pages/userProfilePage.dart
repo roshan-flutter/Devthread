@@ -77,16 +77,18 @@ class _UserProfileState extends State<UserProfile> {
                 bottomRight: Radius.circular(25),
                 bottomLeft: Radius.circular(25),
               ),
+
               gradient: LinearGradient(
+
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-
                 colors: [
                   Colors.purpleAccent.withOpacity(0.5),
                   // Color(0xFFc33bff).withOpacity(0.5),
                   Colors.teal.withOpacity(0.7),
                   // Color(0xFF3aa0d8).withOpacity(0.5)
                 ],
+
 
               )
           ),
