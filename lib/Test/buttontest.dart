@@ -7,14 +7,14 @@ class ButtonTest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return
+       Center(
         child: Text("Button is working",
           style: TextStyle(
             fontSize: 50,
             fontWeight: FontWeight.bold,
           ),),
-      ),
-    );
+      );
+
   }
 }

@@ -1,6 +1,7 @@
 import 'package:devthread/Test/buttontest.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
 import 'package:devthread/pages/page1.dart';
+import 'package:devthread/pages/page2.dart';
 import 'package:devthread/pages/userProfilePage.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,6 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return //UserProfile();
     // return UserProfile();
-     FirstPage();
+     SecondPage();
   }
 }
