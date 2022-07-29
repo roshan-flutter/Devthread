@@ -35,6 +35,7 @@ class _SecondPageState extends State<SecondPage> {
                 TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
+                      borderSide: const BorderSide(width: 0),
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                     ),
                     hintText: 'Search here',

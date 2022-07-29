@@ -4,6 +4,7 @@ import 'package:devthread/pages/page1.dart';
 import 'package:devthread/pages/page2.dart';
 import 'package:devthread/pages/prod_Description.dart';
 import 'package:devthread/pages/services_popup.dart';
+import 'package:devthread/pages/total_amount.dart';
 import 'package:devthread/pages/userProfilePage.dart';
 import 'package:flutter/material.dart';
 void main() {
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return //UserProfile();
     // return UserProfile();
-     SecondPage();
+     TotalAmount();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
