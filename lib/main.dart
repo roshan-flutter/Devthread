@@ -1,11 +1,4 @@
-import 'package:devthread/Test/buttontest.dart';
-import 'package:devthread/pages/cancellation_policy.dart';
-import 'package:devthread/pages/page1.dart';
-import 'package:devthread/pages/page2.dart';
-import 'package:devthread/pages/prod_Description.dart';
-import 'package:devthread/pages/services_popup.dart';
-import 'package:devthread/pages/total_amount.dart';
-import 'package:devthread/pages/userProfilePage.dart';
+import 'package:devthread/pages/checkout_page.dart';
 import 'package:flutter/material.dart';
 void main() {
   runApp( const MyApp());
@@ -21,19 +14,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return //UserProfile();
-    // return UserProfile();
-     TotalAmount();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Popup(),
-      //prodDescription(),
-      //UserProfile()
-
-      //return CancillationPolicy();
-      //return UserProfile();
-      // return FirstPage();
+      home: Checkout(),
 
     );
 
