@@ -73,11 +73,9 @@ class _SecondPageState extends State<SecondPage> {
                       children: [
                         Container(
                             width:300,
-                        height: 40,
-                       // color: Colors.red,
-                        child: SliderContainer()),
+                            height: 40,
+                            child: SliderContainer()),
                        // SizedBox(height: 0.1,),
-
                         Column(
                           children: [
                             TextButton.icon(

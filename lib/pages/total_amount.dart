@@ -110,6 +110,10 @@ class _TotalAmountState extends State<TotalAmount> {
       ),
     );
   }
+
+
+
+
 }
 
 class Top extends StatelessWidget {

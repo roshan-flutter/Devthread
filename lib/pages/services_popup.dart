@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -240,7 +239,7 @@ class _PopupState extends State<Popup> {
                               padding: const EdgeInsets.only(top: 16.0),
                               child: gradientButton("Submit"),
                             ),
-                            ],
+                          ],
                         ),
 
                       ],

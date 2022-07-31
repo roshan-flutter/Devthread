@@ -197,7 +197,6 @@ class _UserProfileState extends State<UserProfile> {
                           Color(0xFFc33bff),
                           Color(0xFF3aa0d8)
                         ],
-
                       )
                   ),
                 ),
