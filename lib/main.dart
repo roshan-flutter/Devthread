@@ -6,6 +6,7 @@ import 'package:devthread/pages/page1.dart';
 import 'package:devthread/pages/page2.dart';
 import 'package:devthread/pages/prod_Description.dart';
 import 'package:devthread/pages/services_popup.dart';
+import 'package:devthread/pages/signup_page.dart';
 import 'package:devthread/pages/total_amount.dart';
 import 'package:devthread/pages/userProfilePage.dart';
 import 'package:devthread/pages/checkout_page.dart';
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage()
+      home: LoginPage(),
 );
       //prodDescription(),
       //UserProfile()

@@ -1,24 +1,22 @@
-import 'package:devthread/pages/page1.dart';
-import 'package:devthread/pages/signup_page.dart';
+import 'package:devthread/pages/login_page.dart';
 import 'package:flutter/material.dart';
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+
+class SignupPage extends StatefulWidget {
+  const SignupPage({Key? key}) : super(key: key);
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<SignupPage> createState() => _SignupPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
-      body: Login(),
-      //  PageView(
-      //   children: [
-      //      LoginPage(),
-      //      SignupPage(),
-      //   ],
-      // ),
+      body: PageView(
+        children: [
+          SignUp(),
+        ],
+      ),
     ),
     );
   }
@@ -36,8 +34,9 @@ class Logo extends StatelessWidget {
     );
   }
 }
-class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+
+class SignUp extends StatelessWidget {
+  const SignUp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -50,12 +49,18 @@ class Login extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("LOGIN",
-              style: TextStyle(
-              fontSize: 20,
-                fontWeight: FontWeight.w500,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+    },
+                child: Text("LOGIN",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
-              ),
+            ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -65,9 +70,9 @@ class Login extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.black,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                ),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SignupPage()));
                 },
 
               ),
@@ -80,6 +85,14 @@ class Login extends StatelessWidget {
               width: MediaQuery.of(context).size.width*0.5,
               height: 10,
               decoration: BoxDecoration(
+                color: Colors.black12,
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width*0.5,
+              height: 10,
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 gradient:  LinearGradient(
                   colors: [Color(0xFFc33bff),
@@ -87,25 +100,18 @@ class Login extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              width: MediaQuery.of(context).size.width*0.5,
-              height: 10,
-              decoration: BoxDecoration(
-                color: Colors.black12,
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-              ),
-            ),
           ],
         ),
         Container(
-         // color: Colors.redAccent,
-            alignment: Alignment.center,
-            child: Content(),
+          // color: Colors.redAccent,
+          alignment: Alignment.center,
+         child: Content(),
         ),
       ],
     );
   }
 }
+
 class Content extends StatelessWidget {
   const Content({Key? key}) : super(key: key);
 
@@ -113,10 +119,10 @@ class Content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+        SizedBox(height: MediaQuery.of(context).size.height*0.03,),
         Container(
-          width: MediaQuery.of(context).size.width*0.7,
-          height: MediaQuery.of(context).size.height*0.08,
+          width: MediaQuery.of(context).size.width*0.8,
+          height: MediaQuery.of(context).size.height*0.07,
           //color: Colors.pinkAccent,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -133,8 +139,8 @@ class Content extends StatelessWidget {
                   ),
                   decoration: InputDecoration(
                     icon: Icon(Icons.email,
-                    size: 35,
-                    color: Colors.black38,),
+                      size: 25,
+                      color: Colors.black38,),
                     border: InputBorder.none,
                     hintText: "Email Address",
                     contentPadding: EdgeInsets.all(8),
@@ -144,10 +150,10 @@ class Content extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+        SizedBox(height: MediaQuery.of(context).size.height*0.03,),
         Container(
-          width: MediaQuery.of(context).size.width*0.7,
-          height: MediaQuery.of(context).size.height*0.08,
+          width: MediaQuery.of(context).size.width*0.8,
+          height: MediaQuery.of(context).size.height*0.07,
           //color: Colors.pinkAccent,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -166,11 +172,11 @@ class Content extends StatelessWidget {
                   decoration: InputDecoration(
                     suffixIcon: IconButton(
                       onPressed: (){},
-                     icon: Icon(Icons.remove_red_eye,
-                     color: Colors.black54,),
+                      icon: Icon(Icons.remove_red_eye,
+                        color: Colors.black54,),
                     ),
                     icon: Icon(Icons.lock,
-                      size: 35,
+                      size: 25,
                       color: Colors.black38,),
                     border: InputBorder.none,
                     hintText: "Password",
@@ -181,37 +187,66 @@ class Content extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+        SizedBox(height: MediaQuery.of(context).size.height*0.03,),
         Container(
-          width: MediaQuery.of(context).size.width*0.7,
-          height: MediaQuery.of(context).size.height*0.08,
+          width: MediaQuery.of(context).size.width*0.8,
+          height: MediaQuery.of(context).size.height*0.07,
+          //color: Colors.pinkAccent,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
-            gradient: LinearGradient(
-              colors: [Color(0xFFc33bff),
-                Color(0xFF3aa0d8)],
-            )
+            border: Border.all(width: 2,color: Colors.black38),
+            color: Colors.black12,
+          ),
+          child: Column(
+            children: [
+              Container(
+                child: TextField(
+                  obscureText: true,
+                  cursorColor: Colors.black,
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                  decoration: InputDecoration(
+                    suffixIcon: IconButton(
+                      onPressed: (){},
+                      icon: Icon(Icons.remove_red_eye,
+                        color: Colors.black54,),
+                    ),
+                    icon: Icon(Icons.lock,
+                      size: 25,
+                      color: Colors.black38,),
+                    border: InputBorder.none,
+                    hintText: "Confirm Password",
+                    contentPadding: EdgeInsets.all(8),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: MediaQuery.of(context).size.height*0.03,),
+        Container(
+          width: MediaQuery.of(context).size.width*0.8,
+          height: MediaQuery.of(context).size.height*0.08,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              gradient: LinearGradient(
+                colors: [Color(0xFFc33bff),
+                  Color(0xFF3aa0d8)],
+              )
           ),
           child: TextButton(
-            onPressed: (){}, child: Text("LOGIN",
-          style: TextStyle(
-            fontWeight: FontWeight.w400,
-          fontSize: 25,
-          color: Colors.white,
-          ),
-          ),
-            
-          ),
-        ),
-        TextButton(onPressed: (){
-          print("Forget password button is working");
-        }, child: Text("Forget Password",
+            onPressed: (){}, child: Text("SIGN UP",
             style: TextStyle(
-              fontSize: 20,
-              color: Colors.blue,
-              fontWeight: FontWeight.w500,
-            )),
+              fontSize: 25,
+              fontWeight: FontWeight.w400,
+              color: Colors.white,
+            ),
+          ),
+
+          ),
         ),
+        SizedBox(height: MediaQuery.of(context).size.height*0.03,),
         Container(
           width: MediaQuery.of(context).size.width*0.7,
           height: 5,
@@ -222,7 +257,7 @@ class Content extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+        SizedBox(height: MediaQuery.of(context).size.height*0.03,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
