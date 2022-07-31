@@ -1,5 +1,6 @@
 import 'package:devthread/Test/buttontest.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
+import 'package:devthread/pages/login_page.dart';
 import 'package:devthread/pages/page1.dart';
 import 'package:devthread/pages/page2.dart';
 import 'package:devthread/pages/prod_Description.dart';
@@ -21,13 +22,13 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return //UserProfile();
+   // return //UserProfile();
     // return UserProfile();
-     TotalAmount();
+   //  TotalAmount();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Popup(),
+      home: LoginPage(),
       //prodDescription(),
       //UserProfile()
 
