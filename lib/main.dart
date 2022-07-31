@@ -1,4 +1,5 @@
 import 'package:devthread/pages/checkout_page.dart';
+import 'package:devthread/pages/tickets_page.dart';
 import 'package:flutter/material.dart';
 void main() {
   runApp( const MyApp());
@@ -17,7 +18,7 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Checkout(),
+      home: Tickets(),
 
     );
 
