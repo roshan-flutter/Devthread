@@ -11,25 +11,6 @@ class Tickets extends StatefulWidget {
 class _TicketsState extends State<Tickets> {
   final double coverHeight = 120;
   final double profileHeight = 110;
-  //TODO- MAKE A MAP FOR THESE THREE LISTS!!
-  static const _iconTypes = <IconData>[
-    Icons.location_history,
-    Icons.person,
-    Icons.alternate_email,
-    Icons.call_sharp,
-    Icons.my_location,
-    Icons.info,
-    Icons.apartment_sharp,
-    Icons.house,
-    Icons.alternate_email,
-    Icons.my_location
-
-  ];
-  List<String> litems = ["Gender","Designation","E-mail","Contact", "Address", "Bio", "Company Name", "Industry Type", "Comapny Web", "Company Address"];
-  //TODO - MAKE IT DYNAMIC
-  List<String> values = ["Male","Developer","vimalkumargupta5@gmail.com","6280851541", "Gotwa", "Mobile Application Development", "JVT", "IT", "www.jvt.com", "Bengaluru"];
-
-  //final TextEditingController eCtrl = new TextEditingController();
 
   String tickedID = "DV20220629121920";
   String raisedTime = "26/06/2022 12:19:20";
@@ -54,12 +35,9 @@ class _TicketsState extends State<Tickets> {
                 padding: const EdgeInsets.fromLTRB(12.0,125,12.0,0),
                 child: ticketInfo(tickedID, raisedTime, prodID, severity, status, desc),
               ),
-
             ],
           )
-
       ),
-
     );
   }
 
