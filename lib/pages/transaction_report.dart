@@ -192,7 +192,7 @@ class _transactionReportState extends State<transactionReport> {
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Row(
               children: [
-                Expanded(child: Text("TICKET ID", style: TextStyle(color: Colors.black87),)),
+                Expanded(child: Text("TOTAL", style: TextStyle(color: Colors.black87),)),
                 Text(total, style: TextStyle())
               ],
             ),
@@ -201,7 +201,7 @@ class _transactionReportState extends State<transactionReport> {
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Row(
               children: [
-                Expanded(child: Text("RAISED TIME", style: TextStyle(color: Colors.black),)),
+                Expanded(child: Text("Paid", style: TextStyle(color: Colors.black),)),
                 Text(paid, style: TextStyle(color: Colors.black),)
               ],
             ),
@@ -211,7 +211,7 @@ class _transactionReportState extends State<transactionReport> {
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Row(
               children: [
-                Expanded(child: Text("PRODUCT ID", style: TextStyle(color: Colors.black),)),
+                Expanded(child: Text("Due", style: TextStyle(color: Colors.black),)),
                 Text(due, style: TextStyle())
               ],
             ),
@@ -220,7 +220,7 @@ class _transactionReportState extends State<transactionReport> {
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Row(
               children: [
-                Expanded(child: Text("SEVERITY", style: TextStyle(color: Colors.black),)),
+                Expanded(child: Text("Installment Type", style: TextStyle(color: Colors.black),)),
                 Text(installment, style: TextStyle(color: Colors.black),)
               ],
             ),
@@ -362,7 +362,6 @@ class Top extends StatelessWidget {
 
 
 }
-
 Widget Bar (String _imgpathlink){
   return InkWell(
     onTap: (){
