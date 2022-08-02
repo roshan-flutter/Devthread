@@ -1,5 +1,6 @@
 import 'package:devthread/Test/buttontest.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
+import 'package:devthread/pages/edit_profile.dart';
 import 'package:devthread/pages/final_amount.dart';
 import 'package:devthread/pages/help_center.dart';
 import 'package:devthread/pages/login_page.dart';
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HelpCenter(),
+      home: editProfile(),
     );
   }
 
