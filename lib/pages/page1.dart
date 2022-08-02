@@ -116,9 +116,8 @@ class _FirstPageState extends State<FirstPage> {
                                 ),
                             ],
                           ),
-                              Positioned(
-                                top: 60,
-                                child:Column(
+                              ListView(
+                                children:[ Column(
                                   children: [
                                     MyContainer2(),
                                     MyContainer3(),
@@ -126,22 +125,13 @@ class _FirstPageState extends State<FirstPage> {
                                     SizedBox(height: 10,),
                                     MyContainer5(),
                                     SizedBox(height: 20,),
+                                    MyContainer4(),
+                                    MyContainer5(),
+
                                   ],
                                 ),
+      ],
                               ),
-                          Align(
-                            alignment: Alignment.bottomLeft,
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text("Exciting Coupans Avilable",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ),
-                          )
                         ],
                       ),
         ),
@@ -482,13 +472,23 @@ class _BottomBarState extends State<BottomBar> {
             //   crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8),
+                    child: Text("Exciting Coupans avilable",
+                    style: TextStyle(
+                    fontSize: 18,
+                      fontWeight: FontWeight.w400,
+                    ),
+                    ),
+                  ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                    height: 60,
-                    width: 60,
+                    //height: 50,
+                    width: 50,
                     decoration: BoxDecoration(
                       color: Colors.white54,
                       borderRadius: BorderRadius.circular(300),
@@ -502,8 +502,8 @@ class _BottomBarState extends State<BottomBar> {
                               print("Button was tapped");
                             },
                             child: Image.asset("icons/home.png",
-                              width: 40,
-                              height: 35,
+                              width: 30,
+                              //height: 35,
                             ),
                           ),
                         ),
@@ -515,7 +515,7 @@ class _BottomBarState extends State<BottomBar> {
 
               ),
                     Container(
-                      height: 60,
+                     // height: 60,
                       width: 60,
                       decoration: BoxDecoration(
                         color: Colors.white54,
@@ -530,8 +530,8 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/dashboard.png",
-                                width: 40,
-                                height: 35,
+                                width: 30,
+                               // height: 35,
                               ),
                             ),
                           ),
@@ -543,7 +543,7 @@ class _BottomBarState extends State<BottomBar> {
 
                     ),
                     Container(
-                      height: 60,
+                    //  height: 60,
                       width: 60,
                       decoration: BoxDecoration(
                         color: Colors.white54,
@@ -558,8 +558,8 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/chat.png",
-                                width: 40,
-                                height: 35,
+                                width: 30,
+                               // height: 35,
                               ),
                             ),
                           ),
@@ -571,7 +571,7 @@ class _BottomBarState extends State<BottomBar> {
 
                     ),
                     Container(
-                      height: 60,
+                     // height: 60,
                       width: 60,
                       decoration: BoxDecoration(
                         color: Colors.white54,
@@ -586,8 +586,8 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/favourite.png",
-                                width: 40,
-                                height: 35,
+                                width: 30,
+                               // height: 35,
                               ),
                             ),
                           ),
@@ -599,7 +599,7 @@ class _BottomBarState extends State<BottomBar> {
 
                     ),
                     Container(
-                      height: 60,
+                    //  height: 60,
                       width: 60,
                       decoration: BoxDecoration(
                         color: Colors.white54,
@@ -614,8 +614,8 @@ class _BottomBarState extends State<BottomBar> {
                                 print("Button was tapped");
                               },
                               child: Image.asset("icons/setting.png",
-                                width: 40,
-                                height: 35,
+                                width: 30,
+                              //  height: 35,
                               ),
                             ),
                           ),
