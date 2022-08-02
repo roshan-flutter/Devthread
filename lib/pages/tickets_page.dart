@@ -104,14 +104,6 @@ class _TicketsState extends State<Tickets> {
                           ),
                         ),
                       ),
-                      // TextField(
-                      //   decoration: InputDecoration(
-                      //     border: OutlineInputBorder(),
-                      //     hintText: 'Enter a search term',
-                      //   ),
-                      // ),
-                      //TextSpan(text:"Edit Profile", style: TextStyle(color: Colors.white, fontSize: 24)),
-
                       Padding(
                         padding: const EdgeInsets.only(right: 16.0),
                         child: Icon(Icons.search, color: Colors.black54, size: 24.0),

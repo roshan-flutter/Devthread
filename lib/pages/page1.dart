@@ -264,7 +264,7 @@ class _MyContainer4State extends State<MyContainer4> {
         width: MediaQuery.of(context).size.width*0.9,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: Colors.white10,
+          color: Colors.white,
           border: Border.all(width: 1,
           color: Colors.black12,
           ),
