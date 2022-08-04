@@ -1,4 +1,6 @@
 import 'package:devthread/Test/buttontest.dart';
+import 'package:devthread/pages/Notifications.dart';
+import 'package:devthread/pages/Orders.dart';
 import 'package:devthread/add_features.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
 import 'package:devthread/pages/edit_profile.dart';
@@ -35,16 +37,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-
-    return MaterialApp(  debugShowCheckedModeBanner: false,
-     home: SafeArea(child: Scaffold(body:AddedFeatures()))
-    );
-
-    //return UserProfile();
-    // return FirstPage();
-    // return //UserProfile();
-    // return UserProfile();
-    //  TotalAmount();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
