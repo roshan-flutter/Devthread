@@ -31,40 +31,6 @@ class _CheckoutState extends State<Checkout> {
       body: ListView(
         children: <Widget>[
 
-          // Padding(
-          //   padding: const EdgeInsets.only(top: 32.0, left: 12, right: 12),
-          //   child: Container(
-          //     height: 50,
-          //     decoration: BoxDecoration(
-          //         borderRadius: BorderRadius.only(
-          //           topRight: Radius.circular(15),
-          //           topLeft: Radius.circular(15)
-          //         ),
-          //         gradient: LinearGradient(
-          //           // begin: Alignment.topCenter,
-          //           // end: Alignment.bottomCenter,
-          //           colors: [
-          //             Color(0xFF3aa0d8),
-          //             //Colors.pink,
-          //             Color(0xFFc33bff),
-          //
-          //           ],
-          //         )
-          //     ),
-          //     child: Padding(
-          //       padding: const EdgeInsets.only(left: 8.0),
-          //       child: Row(
-          //         crossAxisAlignment: CrossAxisAlignment.center,
-          //         children: [
-          //           Text("ADVANCED FEATURES", style: TextStyle(color: Colors.white, fontSize: 18),),
-          //         ],
-          //       ),
-          //     ),
-          //   ),
-          // ),
-
-
-
           header("ADVANCED FEATURES"),
           SizedBox(
                 height: litems.length * 27,

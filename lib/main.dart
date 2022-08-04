@@ -1,4 +1,7 @@
 import 'package:devthread/Test/buttontest.dart';
+import 'package:devthread/pages/Notifications.dart';
+import 'package:devthread/pages/Orders.dart';
+import 'package:devthread/add_features.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
 import 'package:devthread/pages/edit_profile.dart';
 import 'package:devthread/pages/final_amount.dart';
@@ -19,6 +22,8 @@ import 'package:devthread/pages/checkout_page.dart';
 import 'package:devthread/pages/profile_settings.dart';
 import 'package:devthread/pages/tickets_page.dart';
 import 'package:flutter/material.dart';
+
+import 'pages/verifyPhone.dart';
 void main() {
   runApp( const MyApp());
 }
@@ -33,16 +38,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    // return //UserProfile();
-    // return UserProfile();
-    //  TotalAmount();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
+
       home: PaymentPage(),
 
       //home: ForgotPassword(),
+
+
     );
   }
 
