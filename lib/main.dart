@@ -1,4 +1,5 @@
 import 'package:devthread/Test/buttontest.dart';
+import 'package:devthread/add_features.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
 import 'package:devthread/pages/page1.dart';
 import 'package:devthread/pages/userProfilePage.dart';
@@ -18,11 +19,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return CancillationPolicy();
-=======
-    return UserProfile();
+
+    return MaterialApp(  debugShowCheckedModeBanner: false,
+     home: SafeArea(child: Scaffold(body:AddedFeatures()))
+    );
+
+    //return UserProfile();
     // return FirstPage();
->>>>>>> 414c065859f02bfae86b579a08490676a81ee96e
   }
 }
