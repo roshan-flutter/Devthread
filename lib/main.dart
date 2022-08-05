@@ -11,6 +11,7 @@ import 'package:devthread/pages/login_page.dart';
 import 'package:devthread/pages/page1.dart';
 import 'package:devthread/pages/page2.dart';
 import 'package:devthread/pages/payment_page.dart';
+import 'package:devthread/pages/paymentcomfimation_page.dart';
 import 'package:devthread/pages/prod_Description.dart';
 import 'package:devthread/pages/product_Info.dart';
 import 'package:devthread/pages/services_popup.dart';
@@ -43,7 +44,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
 
 
-      home: PaymentPage(),
+      home: PaymentComplete(),
 
       //home: ForgotPassword(),
 
