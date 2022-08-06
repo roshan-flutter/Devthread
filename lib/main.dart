@@ -49,13 +49,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: SelectDomain(),
+      home: FAQPage(),
     );
       //debugShowCheckedModeBanner: false,
 
-<<<<<<< HEAD
-      home: FAQPage(),
-=======
+    //  home: FAQPage(),
 
 
       //home: PaymentComplete(),
@@ -66,7 +64,6 @@ class _MyAppState extends State<MyApp> {
 
 
       //home: PlaceOr
->>>>>>> f6e5f07b20d13e707513b5e84d985e0431bcbba8
 
       //home: ForgotPassword(),
 
