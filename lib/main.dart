@@ -28,7 +28,7 @@ import 'package:devthread/pages/checkout_page.dart';
 import 'package:devthread/pages/profile_settings.dart';
 import 'package:devthread/pages/tickets_page.dart';
 import 'package:flutter/material.dart';
-
+import 'package:devthread/pages/product_payment.dart';
 import 'pages/verifyPhone.dart';
 void main() {
   runApp( const MyApp());
@@ -48,13 +48,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: SelectDomain(),
+      home: ProductPayment(),
     );
       //debugShowCheckedModeBanner: false,
-
-
-
-      //home: PaymentComplete(),
+    // home: PaymentComplete(),
 
       //home: SelectDomain(),
 
