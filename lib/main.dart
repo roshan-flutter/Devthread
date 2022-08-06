@@ -4,6 +4,7 @@ import 'package:devthread/pages/Orders.dart';
 import 'package:devthread/add_features.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
 import 'package:devthread/pages/edit_profile.dart';
+import 'package:devthread/pages/faq_page.dart';
 import 'package:devthread/pages/final_amount.dart';
 import 'package:devthread/pages/forgotPassword.dart';
 import 'package:devthread/pages/help_center.dart';
@@ -45,7 +46,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
 
 
-      home: PlaceOrder(),
+      home: FAQPage(),
 
       //home: ForgotPassword(),
 
