@@ -15,6 +15,10 @@ import 'package:devthread/pages/paymentcomfimation_page.dart';
 import 'package:devthread/pages/prod_Description.dart';
 import 'package:devthread/pages/product_Info.dart';
 import 'package:devthread/pages/select_domain.dart';
+import 'package:devthread/pages/select_domain.dart';
+
+import 'package:devthread/pages/placeorder_page.dart';
+
 import 'package:devthread/pages/services_popup.dart';
 import 'package:devthread/pages/signup_page.dart';
 import 'package:devthread/pages/total_amount.dart';
@@ -41,16 +45,23 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
-    return SelectDomain(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SelectDomain(),
+    );
       //debugShowCheckedModeBanner: false,
+
 
 
       //home: PaymentComplete(),
 
+      //home: SelectDomain(),
+
+
       //home: ForgotPassword(),
 
 
-    );
+
   }
 
 }
