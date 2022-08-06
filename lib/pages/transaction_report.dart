@@ -270,7 +270,8 @@ class _transactionReportState extends State<transactionReport> {
 
                 Column(
                   children: [
-                    //Text("₹500.00")
+
+                    //Text("₹500.00", style: TextStyle())
                     Text( (() {
                       if(num == 1) {
                         return list2[index];

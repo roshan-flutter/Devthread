@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class Notifications extends StatefulWidget {
   const Notifications({Key? key}) : super(key: key);
-
   @override
   _NotificationsState createState() => _NotificationsState();
 }
@@ -12,8 +11,6 @@ class _NotificationsState extends State<Notifications> {
   final double coverHeight = 220;
   final double profileHeight = 110;
   final String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
-
 
   static const double bottomNavHeight = 50;
   static const double appbarr = 60;
@@ -58,11 +55,8 @@ class _NotificationsState extends State<Notifications> {
             notification("Order and Transaction Status", "29 Jun 2022 12:19:58 pm", message),
             notification("Order and Transaction status", "29 Jun 2022 12:19:58 pm", message),
             notification("Confirmation of Demo of School", "29 Jun 2022 12:19:58 pm", message),
-
-
           ],
         ),
-
     );
   }
 
@@ -99,9 +93,4 @@ class _NotificationsState extends State<Notifications> {
 
     ),
   );
-
-
-
-
-
 }
