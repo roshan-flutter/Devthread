@@ -3,6 +3,7 @@ import 'package:devthread/pages/Notifications.dart';
 import 'package:devthread/pages/Orders.dart';
 import 'package:devthread/add_features.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
+import 'package:devthread/pages/development.dart';
 import 'package:devthread/pages/edit_profile.dart';
 import 'package:devthread/pages/faq_page.dart';
 import 'package:devthread/pages/final_amount.dart';
@@ -49,21 +50,21 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-<<<<<<< HEAD
-      home: ProductPayment(),
+
+      home: Development(),
     );
       //debugShowCheckedModeBanner: false,
     // home: PaymentComplete(),
-=======
-      home: FAQPage(),
-    );
+
+      //home: FAQPage(),
+    //);
       //debugShowCheckedModeBanner: false,
 
     //  home: FAQPage(),
 
 
       //home: PaymentComplete(),
->>>>>>> 9b2c4747cca383baa7474330078c1a8b8d5532be
+
 
       //home: SelectDomain(),
 
