@@ -3,6 +3,8 @@ import 'package:devthread/pages/Notifications.dart';
 import 'package:devthread/pages/Orders.dart';
 import 'package:devthread/add_features.dart';
 import 'package:devthread/pages/cancellation_policy.dart';
+import 'package:devthread/pages/customerSupport.dart';
+import 'package:devthread/pages/development.dart';
 import 'package:devthread/pages/edit_profile.dart';
 import 'package:devthread/pages/faq_page.dart';
 import 'package:devthread/pages/final_amount.dart';
@@ -28,7 +30,9 @@ import 'package:devthread/pages/checkout_page.dart';
 import 'package:devthread/pages/profile_settings.dart';
 import 'package:devthread/pages/tickets_page.dart';
 import 'package:flutter/material.dart';
-
+import 'package:devthread/pages/product_payment.dart';
+import 'pages/otpVerification.dart';
+import 'pages/prodDelivery.dart';
 import 'pages/verifyPhone.dart';
 void main() {
   runApp( const MyApp());
@@ -48,26 +52,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: PaymentDecline(),
+    //  home: PaymentDecline(),
+      home: VerifyOTP(),
     );
-      //debugShowCheckedModeBanner: false,
-
-    //  home: FAQPage(),
-
-
-      //home: PaymentComplete(),
-
-      //home: SelectDomain(),
-
-
-
-
-      //home: PlaceOr
-
-      //home: ForgotPassword(),
-
-
-
   }
 
 }
