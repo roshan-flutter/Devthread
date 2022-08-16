@@ -80,7 +80,7 @@ class PageBody extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            DateFormat("dd/mm/yyyy-kk:mm:ss").format(DateTime.now(),
+                            DateFormat("dd/MM/yyyy-kk:mm:ss").format(DateTime.now(),
                             ),
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
